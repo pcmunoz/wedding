@@ -1,4 +1,6 @@
 {
+  "name": "pcm-and-dj-wedding.vercel.app",
+  "author": "Patrick Ceasar Muñoz",
   "private": true,
   "scripts": {
     "dev": "next",
