@@ -11,12 +11,19 @@ export const metadata: Metadata = {
   description: `A hastily made site for said event.`,
   openGraph: {
     title: "Wedding of DJ and PC",
-    description: "Happening on the 5th of July 2024",
+    description: "Happening on the 5th of July 2024 from 2pm onwards. Motif: Vintage + Rustic",
     locale: "en_US",
     type: "website",
     siteName: "DJ and PC Info site",
     url: "https://pcm-and-dj-wedding.vercel.app/",
     images: [{ url: "https://pcm-and-dj-wedding.vercel.app/images/20191009_110102.jpg" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Wedding of DJ and PC",
+    description: "Happening on the 5th of July 2024 from 2pm onwards. Motif: Vintage + Rustic",
+    creator: "@handsomepcm",
+    images: ["https://pcm-and-dj-wedding.vercel.app/images/20191009_110102.jpg"], // Must be an absolute URL
   },
 };
 
