@@ -2,6 +2,7 @@
 import Container from "@/app/_components/container";
 import { Intro } from "@/app/_components/intro";
 
+import Image from "next/image";
 import React from "react";
 import Location from "./_components/Location";
 
@@ -37,6 +38,7 @@ export default function Index() {
   return (
     <main>
       <Container>
+        <Image src="/images/20191009_110102.jpg" width={100} height={50} alt="us" />
         <Intro />
         <h2 className="text-5xl font-bold tracking-tighter leading-tight md:pr-8">Countdown</h2>
         <p className="text-3xl">{`${days} days, ${hours} hours, ${minutes} minutes, ${seconds} seconds to go...`}</p>

@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     type: "website",
     siteName: "DJ and PC Info site",
     url: "https://pcm-and-dj-wedding.vercel.app/",
-    images: [{ url: "https://pcm-and-dj-wedding.vercel.app/" }],
+    images: [{ url: "https://pcm-and-dj-wedding.vercel.app/images/20191009_110102.jpg" }],
   },
 };
 
