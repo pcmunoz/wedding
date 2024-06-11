@@ -2,14 +2,15 @@
 import Container from "@/app/_components/container";
 import { Intro } from "@/app/_components/intro";
 
-import { useEffect, useState } from "react";
+import React from "react";
+import Location from "./_components/Location";
 
 const useCountdown = (targetDate: string) => {
   const countDownDate = new Date(targetDate).getTime();
 
-  const [countDown, setCountDown] = useState(countDownDate - new Date().getTime());
+  const [countDown, setCountDown] = React.useState(countDownDate - new Date().getTime());
 
-  useEffect(() => {
+  React.useEffect(() => {
     const interval = setInterval(() => {
       setCountDown(countDownDate - new Date().getTime());
     }, 1000);
@@ -39,6 +40,7 @@ export default function Index() {
         <Intro />
         <h2 className="text-5xl font-bold tracking-tighter leading-tight md:pr-8">Countdown</h2>
         <p className="text-3xl">{`${days} days, ${hours} hours, ${minutes} minutes, ${seconds} seconds to go...`}</p>
+        <Location />
       </Container>
     </main>
   );
